@@ -1,3 +1,3 @@
-# Template de Currículo 
+# My Curriculum
 
-Template em HTML e CSS para um breve hands on durante a Master Class "Criando um Currículo de Sucesso - O Passo a Passo em Tempo Real".
+Curriculum created with html and css based on the w3.css platform and provided by github pages.
