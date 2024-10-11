@@ -1,155 +1,372 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <title>Ezequiel Messore</title>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Currículo - Ezequiel Messore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <style>
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    </style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
 
+        .sidebar {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            border-bottom: 2px solid #20c997;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #20c997;
+        }
+
+        .progress {
+            height: 20px;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            background-color: #20c997;
+        }
+
+        footer {
+            background-color: #20c997;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+
+        .habilidades-categoria {
+            margin-bottom: 30px;
+        }
+
+        .habilidade-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .habilidade-item i {
+            margin-right: 10px;
+            color: #20c997;
+            width: 25px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Responsividade para ícones maiores em telas menores */
+        @media (max-width: 576px) {
+            .habilidade-item i {
+                width: 30px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 
-<body class="w3-light-grey" cz-shortcut-listen="true">
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div class="w3-third">
-
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-container">
-                    <h2>Ezequiel Messore</h2>
+<div class="container my-5">
+    <div class="row">
+        <!-- Coluna Esquerda -->
+        <div class="col-md-4">
+            <div class="sidebar">
+                <h2 class="mb-4">Ezequiel Messore</h2>
+                <p><i class="fas fa-briefcase me-2 text-success"></i>Desenvolvedor Android</p>
+                <p><i class="fas fa-home me-2 text-success"></i>Araraquara-SP, Brasil</p>
+                <p><i class="fas fa-envelope me-2 text-success"></i>ezequielmessore@gmail.com</p>
+                <p><i class="fas fa-phone me-2 text-success"></i>+55 (16) 99161-8296</p>
+                <hr>
+                <div>
+                    <!-- Seção de Habilidades Técnicas -->
+                    <h5 class="section-title"><i class="fas fa-code me-2"></i>Habilidades Técnicas</h5>
+                    <div class="habilidades-categoria">
+                        <div class="habilidade-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Desenvolvimento Android</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="95"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-laptop-code me-2"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Kotlin</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                         aria-valuenow="90"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fab fa-java"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Java</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-cogs"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Back-End</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-layer-group"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Front-End</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Desenvolvedor Android</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Araraquara-SP, Brasil</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ezequielmessore@gmail.com</p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+55 (16) 99161-8296</p>
-                    <hr>
 
-                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Habilidades</b></p>
-                    <p>Android</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+                <!-- Seção de Soft Skills -->
+                <div class="mt-4">
+                    <h5 class="section-title"><i class="fas fa-users me-2"></i>Soft Skills</h5>
+                    <div class="habilidades-categoria">
+                        <div class="habilidade-item">
+                            <i class="fas fa-comments"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Comunicação</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Resolução de Problemas</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-users"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Trabalho em Equipe</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Adaptabilidade</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="80"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <i class="fas fa-brain"></i>
+                            <div class="flex-grow-1">
+                                <p class="mb-1">Pensamento Crítico</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="85"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>Kotlin</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
-                    </div>
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b></p>
+                </div>
+
+                <!-- Seção de Idiomas -->
+                <div class="mt-4">
+                    <h5 class="section-title"><i class="fas fa-language me-2"></i>Idiomas</h5>
                     <p>Português</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <p>Inglês</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                             aria-valuemin="0" aria-valuemax="100">
+                        </div>
                     </div>
-                    <br>
                 </div>
-            </div><br>
-
-            <!-- End Left Column -->
+            </div>
         </div>
 
-        <!-- Right Column -->
-        <div class="w3-twothird">
-
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sobre</h2>
+        <!-- Coluna Direita -->
+        <div class="col-md-8">
+            <!-- Sobre -->
+            <div class="mb-4">
+                <h3 class="section-title"><i class="fas fa-user me-2 text-success"></i>Sobre Mim</h3>
                 <p>
-                    Sou um desenvolvedor que adora novos desafios e não perde a oportunidade de aprender coisas novas,
-                    sou organizado e estou sempre disponível para pessoas que trazem o melhor de mim, ajudando-me a sempre dar o meu melhor em tudo o que faço.
-                    Então quero compartilhar com você um pouco do que sinto quando programo e retribuir com tudo o que sei.
+                    Sou um desenvolvedor apaixonado por novos desafios e sempre em busca de aprender coisas novas. Sou
+                    organizado e sempre disponível para colaborar com pessoas que me inspiram a dar o meu melhor em tudo
+                    que faço. Quero compartilhar um pouco do que sinto ao programar e retribuir com todo o meu
+                    conhecimento.
                 </p>
             </div>
 
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiência de Trabalho</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>DIO</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">Forever</span></h6>
-                    <p>
-                        Uma das maiores plataformas de educação em TI da América Latina, com quase 1 milhão de usuários.
-                        <a href="https://dio.me">DIO</a> faz parceria com algumas das empresas mais inovadoras do mundo, possibilitando o networking global.
-                        Nesse contexto, criei alguns conteúdos educacionais sobre Android.
+            <!-- Experiência Profissional -->
+            <div class="mb-4">
+                <h3 class="section-title"><i class="fas fa-briefcase me-2 text-success"></i>Experiência Profissional
+                </h3>
+
+                <!-- DIO -->
+                <div class="mb-3">
+                    <h5><strong>DIO</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i><span class="badge bg-success">Sempre</span>
                     </p>
-                    <hr>
-                </div>
-
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Desenvolvedor Android na SKY/DGO</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - <span class="w3-tag w3-teal w3-round">Atual</span></h6>
-                    <p>Trabalhei na refatoração da base de código Android, focando na remoção de recursos obsoletos para manter uma arquitetura limpa e eficiente. Também implementei a comunicação usando o protocolo AWS MQTT e integrei uma nova interface de login, colaborando com um novo parceiro para gerenciar a autenticação.</p>
-                    <hr>
-                </div>
-
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Desenvolvedor Android na Koike Tecnologia</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2024</h6>
-                    <p>Estou trabalhando como parceiro do Grupo Casas Bahia, estamos criando um novo projeto relacionado à biometria facial para evitar que fraudadores obtenham créditos em nossas lojas.</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Desenvolvedor Android na Invillia</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 2022</h6>
                     <p>
-                        Trabalhei como parceiro na <a href="https://help.sumup.com/pt-BR/articles/yDa2xcXckJoxrKWHz0k34-como-funciona-o-sumup-pay">SumUp</a> ajudando a construir o recurso Pix no aplicativo SumUp Pay, para atender ao mercado brasileiro atual.
-
-                        Depois de um tempo fui movido para o projeto <a href="https://play.google.com/store/apps/details?id=com.schibsted.bomnegocio.androidApp&hl=pt_BR&gl=US">OLX</a> e trabalhei com Google ADS por alguns meses antes de decidir que precisava de uma mudança.
+                        Uma das maiores plataformas de educação em TI aberta da América Latina, com quase 1 milhão de
+                        usuários.
+                        A <a href="https://dio.me" target="_blank">DIO</a> faz parcerias com algumas das empresas mais
+                        inovadoras do mundo, possibilitando networking global.
+                        Neste contexto, criei conteúdo educacional sobre Android.
                     </p>
-                    <hr>
                 </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Desenvolvedor Android no S3 BANK</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2020 - 2021</h6>
-                    <p>Trabalhei no <a href="https://play.google.com/store/apps/details?id=com.s3bank.mobile&hl=pt_BR&gl=US">S3 BANK</a> criando uma plataforma BaaS (Bank as a Service), que fornece funcionalidades bancárias para empresas.</p><br>
+                <hr>
+
+                <!-- SKY/DGO -->
+                <div class="mb-3">
+                    <h5><strong>Desenvolvedor Android na SKY/DGO</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i>2022 - <span
+                            class="badge bg-success">Atual</span></p>
+                    <p>
+                        Trabalhei na refatoração da base de código Android, focando na remoção de funcionalidades
+                        depreciadas para manter uma arquitetura limpa e eficiente. Implementei comunicação utilizando o
+                        protocolo AWS MQTT e integrei uma nova interface de login, colaborando com um novo parceiro para
+                        gerenciar a autenticação.
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Koike Technology -->
+                <div class="mb-3">
+                    <h5><strong>Desenvolvedor Android na Koike Tecnology</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i>2021 - 2024</p>
+                    <p>
+                        Atuei como parceiro do Grupo Casas Bahia, desenvolvendo um novo projeto relacionado à biometria
+                        facial para prevenir fraudes na obtenção de créditos nas lojas.
+                    </p>
+                </div>
+                <hr>
+
+                <!-- Invillia -->
+                <div class="mb-3">
+                    <h5><strong>Desenvolvedor Android na Invillia</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i>2021 - 2022</p>
+                    <p>
+                        Colaborei com a <a
+                            href="https://help.sumup.com/pt-BR/articles/yDa2xcXckJoxrKWHz0k34-como-funciona-o-sumup-pay"
+                            target="_blank">SumUp</a> ajudando a construir a funcionalidade Pix no aplicativo SumUp Pay
+                        para atender o mercado brasileiro.
+                        Posteriormente, migrei para o projeto <a
+                            href="https://play.google.com/store/apps/details?id=com.schibsted.bomnegocio.androidApp&hl=pt_BR&gl=US"
+                            target="_blank">OLX</a>, trabalhando com Google ADS por alguns meses antes de decidir por
+                        uma mudança.
+                    </p>
+                </div>
+                <hr>
+
+                <!-- S3 BANK -->
+                <div class="mb-3">
+                    <h5><strong>Desenvolvedor Android na S3 BANK</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i>Jun 2020 - 2021</p>
+                    <p>
+                        Trabalhei na <a
+                            href="https://play.google.com/store/apps/details?id=com.s3bank.mobile&hl=pt_BR&gl=US"
+                            target="_blank">S3 BANK</a> criando uma plataforma BaaS (Bank as a Service) que fornece
+                        funcionalidades bancárias para empresas.
+                    </p>
                 </div>
             </div>
 
-            <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Universidade de Araraquara (Uniara)</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2017</h6>
-                    <p>Engenharia de Computação</p>
-                    <p>Curso voltado para a formação de engenheiros com habilidades em desenvolvimento de software, hardware, e sistemas embarcados. Enfatiza a resolução de problemas complexos e a inovação tecnológica.</p><br>
+            <!-- Educação -->
+            <div class="mb-4">
+                <h3 class="section-title"><i class="fas fa-graduation-cap me-2 text-success"></i>Educação</h3>
+
+                <!-- Universidade de Araraquara -->
+                <div class="mb-3">
+                    <h5><strong>Universidade de Araraquara (Uniara)</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i>2012 - 2017</p>
+                    <p>Engenharia da Computação</p>
+                    <p>Curso voltado para a formação de engenheiros com habilidades em desenvolvimento de software,
+                        hardware e sistemas embarcados. Enfatiza a resolução de problemas complexos e inovação
+                        tecnológica.</p>
                 </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Faculdade de Tecnologia de Araraquara (FATEC)</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2024 - <span class="w3-tag w3-teal w3-round">Atual</span></h6>
+                <hr>
+
+                <!-- Faculdade de Tecnologia de Araraquara -->
+                <div class="mb-3">
+                    <h5><strong>Faculdade de Tecnologia de Araraquara (FATEC)</strong></h5>
+                    <p><i class="fas fa-calendar-alt me-2 text-success"></i>2024 - <span
+                            class="badge bg-success">Atual</span></p>
                     <p>Segurança da Informação</p>
-                    <p>Curso focado em formar profissionais capacitados para proteger dados e sistemas de informação, com ênfase em segurança cibernética, criptografia, e gestão de riscos.</p><br>
+                    <p>Curso focado na formação de profissionais capacitados para proteger dados e sistemas de
+                        informação, com ênfase em cibersegurança, criptografia e gestão de riscos.</p>
                 </div>
             </div>
-
-            <!-- End Right Column -->
         </div>
-
-        <!-- End Grid -->
     </div>
-
-    <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<!-- Rodapé -->
+<footer>
     <p>Encontre-me nas redes sociais.</p>
-    <a href="https://github.com/EzequielMessore" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://linkedin.com/in/ezequielmessore" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p>Desenvolvido por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <div class="social-icons mb-2">
+        <a href="https://github.com/EzequielMessore" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/ezequielmessore" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Desenvolvido com <a href="https://getbootstrap.com/" target="_blank"
+                           class="text-white text-decoration-underline">Bootstrap</a></p>
 </footer>
+
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
