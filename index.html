@@ -88,6 +88,15 @@
         font-size: 1.5rem;
       }
     }
+
+    /* Faithful colors when exporting to PDF / printing */
+    @media print {
+      body { background-color: #ffffff; }
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
   </style>
 </head>
 
@@ -99,7 +108,7 @@
     <div class="col-md-4">
       <div class="sidebar">
         <h2 class="mb-4">Ezequiel Messore</h2>
-        <p><i class="fas fa-briefcase me-2 text-success"></i>Software Engineer &middot; Backend + Android</p>
+        <p><i class="fas fa-briefcase me-2 text-success"></i>Senior Android Engineer &middot; also Backend (Spring)</p>
         <p><i class="fas fa-home me-2 text-success"></i>Araraquara-SP, Brazil</p>
         <p><i class="fas fa-envelope me-2 text-success"></i>ezequielmessore@gmail.com</p>
         <p><i class="fas fa-phone me-2 text-success"></i>+55 (16) 99161-8296</p>
@@ -108,6 +117,27 @@
           <!-- Technical Skills Section -->
           <h5 class="section-title"><i class="fas fa-code me-2"></i>Technical Skills</h5>
           <div class="skills-category">
+            <div class="skill-item">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="flex-grow-1">
+                <p class="mb-1">Android</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-laptop-code"></i>
+              <div class="flex-grow-1">
+                <p class="mb-1">Kotlin (Android + Backend)</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;"
+                       aria-valuenow="100"
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
             <div class="skill-item">
               <i class="fas fa-server"></i>
               <div class="flex-grow-1">
@@ -119,32 +149,11 @@
               </div>
             </div>
             <div class="skill-item">
-              <i class="fas fa-laptop-code"></i>
-              <div class="flex-grow-1">
-                <p class="mb-1">Kotlin (Backend + Android)</p>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;"
-                       aria-valuenow="100"
-                       aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
               <i class="fab fa-java"></i>
               <div class="flex-grow-1">
                 <p class="mb-1">Java</p>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                       aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <i class="fas fa-mobile-alt"></i>
-              <div class="flex-grow-1">
-                <p class="mb-1">Android</p>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                        aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
@@ -243,11 +252,12 @@
       <div class="mb-4">
         <h3 class="section-title"><i class="fas fa-user me-2 text-success"></i>About Me</h3>
         <p>
-          Software engineer with 11+ years of experience working on both <strong>Backend</strong> and <strong>Android</strong>.
-          On the backend side, I work with Spring Boot (Java/Kotlin), microservices, messaging and relational and
-          NoSQL databases. On mobile, I have been shipping production apps since 2014 for fintech, telecom, retail
-          and healthcare. I enjoy problems that require both architecture thinking and hands-on delivery, and I
-          value simple, testable, easy-to-evolve code.
+          Software engineer with 11+ years of experience, focused on <strong>Android</strong> with solid
+          <strong>Backend</strong> work. On mobile, I have been shipping production apps since 2014 (Kotlin,
+          Jetpack Compose, MVVM, Coroutines) for fintech, telecom, retail and healthcare. On the backend side,
+          I work with Spring Boot (Java/Kotlin), microservices, messaging and relational and NoSQL databases.
+          I enjoy problems that require both architecture thinking and hands-on delivery, and I value simple,
+          testable, easy-to-evolve code.
         </p>
       </div>
 
@@ -257,8 +267,8 @@
 
         <!-- SKY/DGO -->
         <div class="mb-3">
-          <h5><strong>Software Engineer at SKY/DGO</strong></h5>
-          <p><i class="fas fa-calendar-alt me-2 text-success"></i>Nov 2022 - <span class="badge bg-success">Present</span></p>
+          <h5><strong>Senior Android Engineer at SKY/DGO</strong></h5>
+          <p><i class="fas fa-calendar-alt me-2 text-success"></i>Nov 2022 - <span class="badge bg-success">Present</span> <span class="text-muted small">&middot; Self-employed</span></p>
           <p>
             Refactoring of the Android codebase (Kotlin, MVVM, Hilt) by removing deprecated features to keep the
             architecture clean and testable. Implemented real-time communication via the <strong>MQTT protocol</strong>
@@ -267,14 +277,38 @@
         </div>
         <hr>
 
-        <!-- Koike Tech -->
+        <!-- Bipa -->
+        <div class="mb-3">
+          <h5><strong>Senior Android Engineer at Bipa</strong></h5>
+          <p><i class="fas fa-calendar-alt me-2 text-success"></i>2025 - 2026 <span class="text-muted small">&middot; Self-employed</span></p>
+          <p>
+            Evolving Bipa's crypto app in Kotlin with Jetpack Compose and Coroutines: modular architecture,
+            performance and new product features. Integration with internal APIs and review of critical flows
+            in the transactional cycle.
+          </p>
+        </div>
+        <hr>
+
+        <!-- Koike Tech (Full-time) -->
         <div class="mb-3">
           <h5><strong>Software Engineer at Koike Tech</strong></h5>
-          <p><i class="fas fa-calendar-alt me-2 text-success"></i>2021 - 2022</p>
+          <p><i class="fas fa-calendar-alt me-2 text-success"></i>2022 - 2024 <span class="text-muted small">&middot; Full-time</span></p>
           <p>
-            <strong>Fullstack</strong> work on an e-commerce product: built the Android sales super-app and
-            contributed to checkout microservices (reactive REST and MongoDB), with exposure to event streaming
-            via Kafka. Side projects in Java, Node.js and ReactJS.
+            Senior mobile engineer on an e-commerce product: evolving the Android sales super-app
+            (Kotlin, MVVM, Coroutines), focusing on modular architecture, performance and maintaining
+            product flows integrated with checkout microservices.
+          </p>
+        </div>
+        <hr>
+
+        <!-- Koike Tech (Self-employed) -->
+        <div class="mb-3">
+          <h5><strong>Software Engineer at Koike Tech</strong></h5>
+          <p><i class="fas fa-calendar-alt me-2 text-success"></i>2021 - 2022 <span class="text-muted small">&middot; Self-employed &middot; Remote</span></p>
+          <p>
+            <strong>Fullstack</strong> work on an e-commerce product: contributed both to the Android sales
+            super-app and to checkout microservices (reactive REST and MongoDB) with event streaming via Kafka.
+            Side projects in Java, Node.js and ReactJS.
           </p>
         </div>
         <hr>
@@ -282,7 +316,7 @@
         <!-- Invillia -->
         <div class="mb-3">
           <h5><strong>Software Engineer at Invillia</strong></h5>
-          <p><i class="fas fa-calendar-alt me-2 text-success"></i>2021 - 2022</p>
+          <p><i class="fas fa-calendar-alt me-2 text-success"></i>2021 - 2022 <span class="text-muted small">&middot; Full-time</span></p>
           <p>
             Android work on <a
                   href="https://help.sumup.com/pt-BR/articles/yDa2xcXckJoxrKWHz0k34-como-funciona-o-sumup-pay"
@@ -298,7 +332,7 @@
         <!-- S3 BANK -->
         <div class="mb-3">
           <h5><strong>Software Engineer at S3 BANK</strong></h5>
-          <p><i class="fas fa-calendar-alt me-2 text-success"></i>Jun 2020 - 2022</p>
+          <p><i class="fas fa-calendar-alt me-2 text-success"></i>Jun 2020 - 2022 <span class="text-muted small">&middot; Self-employed</span></p>
           <p>
             Built the <a
                   href="https://play.google.com/store/apps/details?id=com.s3bank.mobile&hl=pt_BR&gl=US"
